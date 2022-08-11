@@ -3,6 +3,9 @@ import Todos from "./Todos/Todos";
 import moon from './images/icon-moon.svg'
 import sun from './images/icon-sun.svg'
 import lightMobile from './images/bg-mobile-light.jpg'
+import darkMobile from './images/bg-mobile-dark.jpg'
+import lightDesktop from './images/bg-desktop-light.jpg'
+import darkDesktop from './images/bg-desktop-dark.jpg'
 import { projectFirestore } from "./firebase/config";
 import { useState, useEffect } from "react";
 
@@ -49,7 +52,7 @@ function App() {
       if (theme === "light" && window.innerWidth < 650) {
         setBg(`url(${lightMobile})`);
       } else if (theme === "dark" && window.innerWidth < 650) {
-        setBg("url('../images/bg-mobile-dark.jpg')");
+        setBg(`url(${darkMobile})`);
       } else if (
         theme === "light" &&
         window.innerWidth > desktopWidth &&
@@ -58,7 +61,7 @@ function App() {
         setBgSize("100vw 300px");
         setThemeMargin("20vw");
         setwidthGenCont("60vw");
-        setBg("url('../images/bg-desktop-light.jpg')");
+        setBg(`url(${lightDesktop})`);
       } else if (
         theme === "dark" &&
         window.innerWidth > desktopWidth &&
@@ -67,7 +70,7 @@ function App() {
         setBgSize("100vw 300px");
         setThemeMargin("20vw");
         setwidthGenCont("60vw");
-        setBg("url('../images/bg-desktop-dark.jpg')");
+        setBg(`url(${darkDesktop})`);
       } else if (
         theme === "light" &&
         window.innerWidth > desktopWidthMd &&
@@ -76,7 +79,7 @@ function App() {
         setBgSize("100vw 300px");
         setThemeMargin("20vw");
         setwidthGenCont("50vw");
-        setBg("url('../images/bg-desktop-light.jpg')");
+        setBg(`url(${lightDesktop})`);
       } else if (
         theme === "dark" &&
         window.innerWidth > desktopWidthMd &&
@@ -85,23 +88,23 @@ function App() {
         setBgSize("100vw 300px");
         setThemeMargin("20vw");
         setwidthGenCont("50vw");
-        setBg("url('../images/bg-desktop-dark.jpg')");
+        setBg(`url(${darkDesktop})`);
       } else if (theme === "light" && window.innerWidth > 1300) {
         setBgSize("100vw 300px");
         setThemeMargin("20vw");
         setwidthGenCont("35vw");
-        setBg("url('../images/bg-desktop-light.jpg')");
+        setBg(`url(${lightDesktop})`);
       } else if (theme === "dark" && window.innerWidth > 1300) {
         setBgSize("100vw 300px");
         setThemeMargin("20vw");
         setwidthGenCont("35vw");
-        setBg("url('../images/bg-desktop-dark.jpg')");
+        setBg(`url(${darkDesktop})`);
       } else if (theme === "light") {
         setBgSize("100vw 300px");
-        setBg("url('../images/bg-desktop-light.jpg");
+        setBg(`url(${lightDesktop})`);
       } else {
         setBgSize("100vw 300px");
-        setBg("url('../images/bg-desktop-dark.jpg");
+        setBg(`url(${darkDesktop})`);
       }
     };
     setBgResponsive();
