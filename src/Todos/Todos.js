@@ -130,7 +130,7 @@ const Todos = ({ theme, desktopWidth,widthGenCont }) => {
                 >
                   {todo.done && (
                     <img
-                      src="../../images/icon-check.svg"
+                      src="../../public/images/icon-check.svg"
                       alt="done"
                       style={{ marginBottom: "5px", marginLeft: "5px" }}
                     />
@@ -146,7 +146,7 @@ const Todos = ({ theme, desktopWidth,widthGenCont }) => {
                   {todo.todo}
                 </p>
                 <img
-                  src="../../images/icon-cross.svg"
+                  src="../../public/images/icon-cross.svg"
                   alt="cross"
                   className="cross"
                   onClick={() => handleDelete(todo.id)}
