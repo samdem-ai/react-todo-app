@@ -32,7 +32,7 @@ function App() {
       setThemeSrc(sun);
       setTheme("dark");
     } else {
-      setThemeSrc(moon));
+      setThemeSrc(moon);
       setTheme("light");
     }
   };
