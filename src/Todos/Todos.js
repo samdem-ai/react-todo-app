@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { projectFirestore } from "../firebase/config";
+import cross from '../images/icon-cross.svg'
 import "../App.css";
 import "./Todos.css";
 
@@ -146,7 +147,7 @@ const Todos = ({ theme, desktopWidth,widthGenCont }) => {
                   {todo.todo}
                 </p>
                 <img
-                  src="../images/icon-cross.svg"
+                  src={cross}
                   alt="cross"
                   className="cross"
                   onClick={() => handleDelete(todo.id)}
