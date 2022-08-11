@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { projectFirestore } from "../firebase/config";
 import cross from '../images/icon-cross.svg'
+import check from '../images/icon-check.svg'
 import "../App.css";
 import "./Todos.css";
 
@@ -131,7 +132,7 @@ const Todos = ({ theme, desktopWidth,widthGenCont }) => {
                 >
                   {todo.done && (
                     <img
-                      src="../../public/images/icon-check.svg"
+                      src={check}
                       alt="done"
                       style={{ marginBottom: "5px", marginLeft: "5px" }}
                     />
