@@ -146,7 +146,7 @@ const Todos = ({ theme, desktopWidth,widthGenCont }) => {
                   {todo.todo}
                 </p>
                 <img
-                  src="../../public/images/icon-cross.svg"
+                  src="../images/icon-cross.svg"
                   alt="cross"
                   className="cross"
                   onClick={() => handleDelete(todo.id)}
