@@ -1,0 +1,62 @@
+p{
+    margin: 0 !important;
+    width: 80%;
+    text-align: start;
+    margin-left: 2vw !important;
+}
+
+.item{
+    width: 85vw;
+    min-height: 65px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .5s;
+}
+
+.itemSpecial{
+    justify-content: space-between;
+}
+
+.itemSpecial p,.filter p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    width: fit-content;
+    opacity: 40%;
+}
+
+.clear{
+    cursor: pointer;
+}
+
+.clear:hover{
+    opacity: 60%;
+}
+
+
+
+
+
+.cross{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    margin-left: 2vw !important;
+}
+
+.list-group{
+    margin-top: 3vh;
+}
+
+.filter {
+    justify-content: center;
+}
+
+.filter p{
+    margin-right: 20px !important;
+    cursor: pointer;
+}
+
+/* .item{
+    width: 40vw;
+} */
