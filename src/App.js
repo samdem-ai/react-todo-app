@@ -2,7 +2,6 @@ import "./App.css";
 import Todos from "./Todos/Todos";
 import moon from './images/icon-moon.svg'
 import sun from './images/icon-sun.svg'
-import lightMobile from './images/bg-mobile-light.jpg'
 import { projectFirestore } from "./firebase/config";
 import { useState, useEffect } from "react";
 
@@ -47,7 +46,7 @@ function App() {
   useEffect(() => {
     const setBgResponsive = () => {
       if (theme === "light" && window.innerWidth < 650) {
-        setBg(lightMobile);
+        setBg("url('./images/bg-mobile-light.jpg')");
       } else if (theme === "dark" && window.innerWidth < 650) {
         setBg("url('../images/bg-mobile-dark.jpg')");
       } else if (
